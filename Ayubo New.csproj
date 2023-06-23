@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05ECC91A-3E5A-4EFC-B623-7C7768207E46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ayubo_New</RootNamespace>
+    <AssemblyName>Ayubo New</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About Us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About Us.Designer.cs">
+      <DependentUpon>About Us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Contact us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact us.Designer.cs">
+      <DependentUpon>Contact us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DayTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DayTour.Designer.cs">
+      <DependentUpon>DayTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LongTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LongTour.Designer.cs">
+      <DependentUpon>LongTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Package.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Package.Designer.cs">
+      <DependentUpon>Package.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentCalculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentCalculation.Designer.cs">
+      <DependentUpon>RentCalculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle.Designer.cs">
+      <DependentUpon>Vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcomepage.Designer.cs">
+      <DependentUpon>Welcomepage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About Us.resx">
+      <DependentUpon>About Us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact us.resx">
+      <DependentUpon>Contact us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayTour.resx">
+      <DependentUpon>DayTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LongTour.resx">
+      <DependentUpon>LongTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Package.resx">
+      <DependentUpon>Package.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentCalculation.resx">
+      <DependentUpon>RentCalculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vehicle.resx">
+      <DependentUpon>Vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcomepage.resx">
+      <DependentUpon>Welcomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AyuboDataSet.xsc">
+      <DependentUpon>AyuboDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDataSet.xss">
+      <DependentUpon>AyuboDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDataSet1.xsc">
+      <DependentUpon>AyuboDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDataSet1.xss">
+      <DependentUpon>AyuboDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDataSet2.xsc">
+      <DependentUpon>AyuboDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDataSet2.xss">
+      <DependentUpon>AyuboDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDataSet3.xsc">
+      <DependentUpon>AyuboDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDataSet3.xss">
+      <DependentUpon>AyuboDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSSS.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8845690c45a964af006511866b5566dd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FFFF.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FFFFDD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FFFFDD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JH1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-background-with-modern-design-blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FFFFDD2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-blue-design-vector-729799.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-blue-design-vector-7297991.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-blue-design-vector-7297992.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-blue-design-vector-7297993.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-blue-design-vector-7297994.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-blue-design-vector-7297995.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-blue-design-vector-7297996.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camper-car-sea-sunset-recreational-vehicle-mediterranean-coast-spain-camping-nature-vacation-traveling-motor-home-220631405.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26962382_374578546340533_3974426993010516816_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-sunset-5192590.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camper-car-sea-sunset-recreational-vehicle-mediterranean-coast-spain-camping-nature-vacation-traveling-motor-home-2206314051.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-parked-sunset-5192594.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_764866978-380x320.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_764866978-380x3201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-parked-sunset-51925941.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-blue-suv-car-with-sport-modern-design-parked-concrete-road-by-sea-sunset-environmentally-friendly-technology-road-trip-travel-vacation_33867-679.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-sunset-51925901.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\023b9fe532ba377ab79be14834784c99.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5IQEnQ2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
